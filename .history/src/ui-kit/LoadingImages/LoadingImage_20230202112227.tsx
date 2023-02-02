@@ -1,0 +1,22 @@
+import React from "react";
+import { LoadingBlock, Wrapper } from "./styles";
+
+interface LoadingImageProps {
+  link: string;
+}
+
+const LoadingImage: React.FC<LoadingImageProps> = ({ link }) => {
+  return (
+    <Wrapper>
+      <LoadingBlock/>
+      <img
+        src={link}
+        loading="eager"
+        alt="gallery item"
+        style={{ width: "100%" }}
+      />
+    </Wrapper>
+  );
+};
+
+export default LoadingImage;
