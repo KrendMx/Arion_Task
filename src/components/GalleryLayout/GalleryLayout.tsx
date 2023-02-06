@@ -69,11 +69,9 @@ const GalleryLayout: React.FC = () => {
         <Wrapper ref={reference}>
           {items.map((item, index) => {
             return (
-              <div key={index}>
-                <LoadingImage
-                  link={`https://picsum.photos/id/${item}/800/1000`}
-                />
-              </div>
+              <LoadingImage
+                link={`https://picsum.photos/id/${item}/800/1000`}
+              />
             );
           })}
         </Wrapper>

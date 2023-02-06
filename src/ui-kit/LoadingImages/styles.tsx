@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 
-const Wrapper = styled.div`
-  display: flex;
+const Wrapper = styled.div<{visible: boolean}>`
+  display: ${(props) => props.visible ? 'flex' : 'none'};
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -15,6 +15,7 @@ const Wrapper = styled.div`
     transform: scale(1.1);
   }
 `;
+
 
 const shine = keyframes`
   to {
