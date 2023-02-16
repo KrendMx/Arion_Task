@@ -1,4 +1,4 @@
-# Hello, Arion Fund!
+# Hello there!
 
 Thank you for the interesting task. I got incredible pleasure doing it. Now I want to tell you how to run my solution.
 ### `npm i`
